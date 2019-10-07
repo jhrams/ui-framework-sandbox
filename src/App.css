@@ -24,3 +24,8 @@
 .selected {
   background-color: red;
 }
+
+.selection {
+    background: rgba(0, 0, 255, 0.1);
+    border: 0.05em solid rgba(0, 0, 255, 0.2);
+}

@@ -7,7 +7,7 @@ import Selection from '@simonwep/selection-js';
 function App() {
   Selection.create({
       // Class for the selection-area
-      class: 'App',
+      class: 'selection',
 
       // All elements in this container can be selected
       selectables: ['.test', '.App-logo', '.test1'],
@@ -63,6 +63,21 @@ function App() {
         <p className="test">testing 3</p>
         <p className="test">testing 4</p>
         <p className="test">testing 5</p>
+        <p className="test">testing 2</p>
+        <p className="test">testing 3</p>
+        <p className="test">testing 4</p>
+        <p className="test">testing 5</p>
+        <p className="test">testing 2</p>
+        <p className="test">testing 3</p>
+        <p className="test">testing 4</p>
+        <p className="test">testing 5</p>
+        <p className="test">testing 2</p>
+        <p className="test">testing 3</p>
+        <p className="test">testing 4</p>
+        <p className="test">testing 5</p>
+        <div className="test-div">
+          <p className="testing1">testing <span className="testing2">6</span></p>
+        </div>
       </header>
       <Testing />
     </div>
