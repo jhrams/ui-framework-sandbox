@@ -5,7 +5,7 @@ import Testing from './Testing';
 import Selection from '@simonwep/selection-js';
 
 function App() {
-  Selection.create({
+  const selection = Selection.create({
     class: 'selection',
     selectables: ['.test', '.App-logo', '.test1'],
     boundaries: ['.App'],
@@ -14,8 +14,8 @@ function App() {
     if (!oe.ctrlKey && !oe.metaKey) {
       // Unselect all elements
       for (const el of selected) {
-          el.classList.remove('selected');
-          inst.removeFromSelection(el);
+        el.classList.remove('selected');
+        inst.removeFromSelection(el);
       }
       // Clear previous selection
       inst.clearSelection();
@@ -37,6 +37,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <button onClick={() => selection.enable()}>Enable</button>
+        <button onClick={() => {
+          const selectedElementsInstance = [...selection.getSelection()]
+          for (const el of selectedElementsInstance) {
+            el.classList.remove('selected');
+            selection.removeFromSelection(el);
+          }
+          selection.clearSelection();
+          selection.disable();
+        }}>Disable</button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
