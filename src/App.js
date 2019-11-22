@@ -2,11 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Testing from './Testing';
+import Test1 from './components/Test1';
+import UpButton from './components/UpButton';
+import NavBar from './components/NavBar';
 import Selection from '@simonwep/selection-js';
 
 import { Button as SButton } from 'semantic-ui-react';
 import { Button as MButton } from '@material-ui/core';
 import { Button as BButton } from 'react-bootstrap';
+
+import { CountProvider } from './contexts/CountContext';
+
 
 
 const selection = Selection.create({
@@ -49,6 +55,11 @@ class App extends React.Component {
 
     return (
       <div className={`App ${this.state.selectionEnabled ? 'selection-enabled' : 'selection-disabled' }`}>
+        <NavBar theme={this.state.theme} />
+        <CountProvider>
+          <Test1 />
+          <UpButton />
+        </CountProvider>
         <div>
           <button onClick={() => this.setState({ theme: 'react-semantic' })}>React-Semantic</button>
           <button onClick={() => this.setState({ theme: 'material-ui' })}>Material-UI</button>
