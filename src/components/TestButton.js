@@ -8,7 +8,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 
 
 const TestButton = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div>

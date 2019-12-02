@@ -3,7 +3,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 
 
 const ThemeSelectors = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const { setTheme } = useContext(ThemeContext);
 
   return (
     <div>

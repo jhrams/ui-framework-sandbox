@@ -6,7 +6,7 @@ import SemanticNavBar from './SemanticNavBar';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 const NavBar = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div>

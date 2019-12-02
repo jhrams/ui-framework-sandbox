@@ -7,7 +7,7 @@ export const ThemeProvider = props => {
   const [theme, setTheme] = useState("react-bootstrap");
 
   return (
-    <ThemeContext.Provider value={[theme, setTheme]}>
+    <ThemeContext.Provider value={ { theme, setTheme } }>
       {props.children}
     </ThemeContext.Provider>
   )
