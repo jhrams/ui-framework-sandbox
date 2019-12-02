@@ -5,6 +5,7 @@ import Testing from './Testing';
 import Test1 from './components/Test1';
 import UpButton from './components/UpButton';
 import NavBar from './components/NavBar';
+import GoogleMap from './components/GoogleMap';
 import Selection from '@simonwep/selection-js';
 
 import { Button as SButton } from 'semantic-ui-react';
@@ -12,7 +13,6 @@ import { Button as MButton } from '@material-ui/core';
 import { Button as BButton } from 'react-bootstrap';
 
 import { CountProvider } from './contexts/CountContext';
-
 
 
 const selection = Selection.create({
@@ -55,6 +55,7 @@ class App extends React.Component {
 
     return (
       <div className={`App ${this.state.selectionEnabled ? 'selection-enabled' : 'selection-disabled' }`}>
+        <GoogleMap />
         <NavBar theme={this.state.theme} />
         <CountProvider>
           <Test1 />
