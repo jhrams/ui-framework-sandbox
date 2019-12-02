@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/ui-framework-sandbox/static/css/main.d5cfe72a.chunk.css",
-    "main.js": "/ui-framework-sandbox/static/js/main.64b3de77.chunk.js",
-    "main.js.map": "/ui-framework-sandbox/static/js/main.64b3de77.chunk.js.map",
+    "main.js": "/ui-framework-sandbox/static/js/main.c71bbc7a.chunk.js",
+    "main.js.map": "/ui-framework-sandbox/static/js/main.c71bbc7a.chunk.js.map",
     "runtime-main.js": "/ui-framework-sandbox/static/js/runtime-main.5fec0269.js",
     "runtime-main.js.map": "/ui-framework-sandbox/static/js/runtime-main.5fec0269.js.map",
-    "static/js/2.7af4e68c.chunk.js": "/ui-framework-sandbox/static/js/2.7af4e68c.chunk.js",
-    "static/js/2.7af4e68c.chunk.js.map": "/ui-framework-sandbox/static/js/2.7af4e68c.chunk.js.map",
+    "static/js/2.8f75e6cd.chunk.js": "/ui-framework-sandbox/static/js/2.8f75e6cd.chunk.js",
+    "static/js/2.8f75e6cd.chunk.js.map": "/ui-framework-sandbox/static/js/2.8f75e6cd.chunk.js.map",
     "index.html": "/ui-framework-sandbox/index.html",
-    "precache-manifest.468149ce159e6d630265d3105645b0c8.js": "/ui-framework-sandbox/precache-manifest.468149ce159e6d630265d3105645b0c8.js",
+    "precache-manifest.08f305ee6dbfde2410f19cc5f64480e7.js": "/ui-framework-sandbox/precache-manifest.08f305ee6dbfde2410f19cc5f64480e7.js",
     "service-worker.js": "/ui-framework-sandbox/service-worker.js",
     "static/css/main.d5cfe72a.chunk.css.map": "/ui-framework-sandbox/static/css/main.d5cfe72a.chunk.css.map",
     "static/media/logo.svg": "/ui-framework-sandbox/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5fec0269.js",
-    "static/js/2.7af4e68c.chunk.js",
+    "static/js/2.8f75e6cd.chunk.js",
     "static/css/main.d5cfe72a.chunk.css",
-    "static/js/main.64b3de77.chunk.js"
+    "static/js/main.c71bbc7a.chunk.js"
   ]
 }
