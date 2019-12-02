@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 import BootstrapNavbar from './BootstrapNavBar';
 import SemanticNavBar from './SemanticNavBar';
 
-const NavBar = ({ theme }) => {
+import { ThemeContext } from '../contexts/ThemeContext';
+
+const NavBar = () => {
+  const [theme, setTheme] = useContext(ThemeContext);
+
   return (
     <div>
       { theme === 'react-semantic' && <SemanticNavBar /> }

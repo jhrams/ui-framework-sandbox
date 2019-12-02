@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import {CountContext} from '../contexts/CountContext'
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const UpButton = () => {
-  const [count, setCount] = useContext(CountContext);
+  const [theme, setTheme] = useContext(ThemeContext);
 
   return (
-    <button onClick={() => setCount(count + 1)}>click meeee</button>
+    <button onClick={() => setTheme("react-semantic")}>{theme}</button>
   )
 }
 

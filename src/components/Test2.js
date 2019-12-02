@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import {CountContext} from '../contexts/CountContext'
+import {ThemeContext} from '../contexts/ThemeContext'
 
 const Test2 = (props) => {
-  const [count, setCount] = useContext(CountContext);
+  const [theme, setTheme] = useContext(ThemeContext);
 
   return (
     <p>
-      {count}
+      {theme}
     </p>
   )
 }
