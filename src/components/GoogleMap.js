@@ -44,7 +44,7 @@ const GoogleMap = () => {
   useEffect(() => {
     const googleMapScript = document.createElement('script');
 
-    googleMapScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCsA81aWSZZoBktjvoIR_lFVh1vMiV71sQ&libraries=places"
+    googleMapScript.src = "https://maps.googleapis.com/maps/api/js?key={{insert API KEY here}}&libraries=places"
 
     window.document.body.appendChild(googleMapScript)
 
